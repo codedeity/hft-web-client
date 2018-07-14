@@ -3,9 +3,12 @@
 [![Build Status](https://travis-ci.org/akveo/ngx-admin.svg?branch=master)](https://travis-ci.org/akveo/ngx-admin)
 [![Dependency Status](https://david-dm.org/akveo/ngx-admin/status.svg)](https://david-dm.org/akveo/ng2-admin)
 
-[Who uses ngx-admin?](https://github.com/akveo/ngx-admin/issues/1645)
-
 ## Web Client based on Angular 6+, Bootstrap 4 and [Nebular](https://github.com/akveo/nebular)
+
++ clone code
++ install node v8.0+(if without)
++ npm install -g @angular/cli
++ npm install
 
 ### Three themes available
 
@@ -19,27 +22,27 @@
 
 ### What's included
 
-- Angular 6+ & Typescript
-- Bootstrap 4+ & SCSS
-- Responsive layout
-- RTL support
-- High resolution
-- Flexibly configurable themes with **hot-reload** (2 themes included)
-- Authentication module with multiple providers
-- Lots of awesome features:
-  - Buttons
-  - Modals
-  - Popovers
-  - Icons
-  - Typography
-  - Animated searches
-  - Forms
-  - Tabs
-  - Notifications
-  - Tables
-  - Maps
-  - Charts
-  - Editors
++ Angular 6+ & Typescript
++ Bootstrap 4+ & SCSS
++ Responsive layout
++ RTL support
++ High resolution
++ Flexibly configurable themes with **hot-reload** (2 themes included)
++ Authentication module with multiple providers
++ Lots of awesome features:
+  + Buttons
+  + Modals
+  + Popovers
+  + Icons
+  + Typography
+  + Animated searches
+  + Forms
+  + Tabs
+  + Notifications
+  + Tables
+  + Maps
+  + Charts
+  + Editors
 
 And many more!
 
@@ -49,15 +52,16 @@ And many more!
 
 ### Demo From Akveo
 
-## Click it:  [ngx-admin](http://akveo.com/ngx-admin/)
+## Click :  ***[ngx-admin](http://akveo.com/ngx-admin/)***
 
 ### Documentation
 
-This template is using [Nebular](https://github.com/akveo/nebular) modules set, [here you can find documentation and other useful articles](https://akveo.github.io/nebular/docs/guides/install-based-on-starter-kit).
+[Nebular Dev Docs](https://github.com/akveo/nebular/blob/master/DEV_DOCS.md).
+[documentation and articles](https://akveo.github.io/nebular/docs/guides/install-based-on-starter-kit).
 
 ### Empty starter kit
 
-Don't need all the pages and modules and just looking for an empty starter kit for your next project? Check out our [starter-kit branch](https://github.com/akveo/ngx-admin/tree/starter-kit).
+An empty starter  Check out our [starter-kit branch](https://github.com/CodeDeity/htf-web-client/tree/starter-kit).
 
 ## BrowserStack
 
