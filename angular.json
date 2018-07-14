@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "hft-client": {
+    "hft-web-client": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -74,18 +74,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "hft-client:build"
+            "browserTarget": "hft-web-client:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "hft-client:build:production"
+              "browserTarget": "hft-web-client:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "hft-client:build"
+            "browserTarget": "hft-web-client:build"
           }
         },
         "test": {
@@ -142,7 +142,7 @@
         }
       }
     },
-    "hft-client-e2e": {
+    "hft-web-client-e2e": {
       "root": "",
       "sourceRoot": "",
       "projectType": "application",
@@ -151,7 +151,7 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "./protractor.conf.js",
-            "devServerTarget": "hft-client:serve"
+            "devServerTarget": "hft-web-client:serve"
           }
         },
         "lint": {
@@ -166,7 +166,7 @@
       }
     }
   },
-  "defaultProject": "hft-client",
+  "defaultProject": "hft-web-client",
   "schematics": {
     "@schematics/angular:component": {
       "prefix": "ngx",
