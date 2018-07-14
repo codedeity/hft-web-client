@@ -12,25 +12,44 @@
     width: 100%;
     order: 0;
     flex-direction: row;
+    flex: 1;
   }
   .right {
     order: 1;
     flex-direction: row-reverse;
+    flex: 1.5;
   }
 
   .logo-containter {
     display: flex;
     align-items: center;
+    width: calc(#{nb-theme(sidebar-width)} - #{nb-theme(header-padding)});
   }
 
   .control-item {
     display: block;
+
+    &.email-text {
+      height: auto;
+      a {
+        text-decoration: underline;
+      }
+    }
+
+    &.github-start {
+      width: 140px;
+      display: flex;
+
+      iframe {
+        width: 100px;
+      }
+    }
   }
 
   .header-container {
     display: flex;
     align-items: center;
-    width: 100%;
+    width: auto;
 
     .navigation {
       @include nb-ltr(padding-right, nb-theme(padding));
@@ -58,9 +77,33 @@
     }
   }
 
-  ngx-layout-direction-switcher,
+  @include nb-for-theme(corporate) {
+    $menu-action-separator-color: #3f4550;
+
+    nb-action {
+      @include nb-ltr(border-left-color, $menu-action-separator-color);
+      @include nb-rtl(border-right-color, $menu-action-separator-color);
+    }
+
+    .header-container .logo {
+      @include nb-ltr(border, none);
+      @include nb-rtl(border, none);
+    }
+
+    .header-container /deep/ ngx-theme-switcher .dropdown-toggle {
+      color: nb-theme(color-white);
+      background: transparent;
+    }
+  }
+
+  ngx-layout-direction-switcher {
+    margin: 0 1.5rem;
+  }
+
   ngx-theme-switcher {
-    margin: 0 1em;
+    margin: nb-theme(layout-padding);
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
   @include media-breakpoint-down(xl) {
@@ -128,6 +171,19 @@
     }
   }
 
+  @include media-breakpoint-down(xl) {
+
+    .control-item.email, .control-item.notifications {
+      display: none;
+    }
+  }
+
+  @include media-breakpoint-down(lg) {
+    .control-item.search {
+      display: none;
+    }
+  }
+
   @include media-breakpoint-down(md) {
 
     nb-action:not(.toggle-layout) {
@@ -137,14 +193,16 @@
     .control-item {
       display: none;
     }
-
     .toggle-layout {
       padding: 0;
     }
 
-    ngx-layout-direction-switcher,
-    ngx-theme-switcher {
+    ngx-layout-direction-switcher {
       display: none;
+    }
+
+    ngx-theme-switcher {
+      margin: 0 0.5rem;
     }
   }
 
@@ -153,9 +211,10 @@
     nb-user /deep/ .user-name {
       display: none;
     }
-  }
 
-  @include media-breakpoint-down(is) {
+    .control-item.github-start {
+      display: none;
+    }
 
     .header-container {
       .logo {
@@ -164,6 +223,10 @@
     }
 
     .toggle-layout {
+      display: none;
+    }
+
+    ngx-theme-switcher {
       display: none;
     }
 
