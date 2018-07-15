@@ -70,7 +70,7 @@ And many more!
 
 ### Empty starter kit
 
-An empty starter  Check out our [starter-kit branch](https://github.com/CodeDeity/htf-web-client/tree/starter-kit).
+An empty starter  Check out our [starter-kit branch](https://github.com/CodeDeity/hft-web-client/tree/starter-kit).
 
 ## BrowserStack
 

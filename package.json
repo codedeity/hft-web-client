@@ -4,10 +4,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/CodeDeity/htf-web-client.git"
+    "url": "git+https://github.com/CodeDeity/hft-web-client.git"
   },
   "bugs": {
-    "url": "https://github.com/CodeDeity/htf-web-client/issues"
+    "url": "https://github.com/CodeDeity/hft-web-client/issues"
   },
   "browserslist": [
     "> 1%",
