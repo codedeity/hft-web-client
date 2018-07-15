@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-//import { CKEditorModule } from 'ng2-ckeditor';
+// import { CKEditorModule } from 'ng2-ckeditor';
 
 import { ThemeModule } from '../../@theme/theme.module';
 
