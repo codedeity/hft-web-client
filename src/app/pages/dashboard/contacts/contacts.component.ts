@@ -32,6 +32,7 @@ export class ContactsComponent implements OnInit, OnDestroy {
     this.userService.getUsers()
       .subscribe((users: any) => {
         this.contacts = [
+          {user: users.edward, type: 'mobile'},
           {user: users.nick, type: 'mobile'},
           {user: users.eva, type: 'home'},
           {user: users.jack, type: 'mobile'},
