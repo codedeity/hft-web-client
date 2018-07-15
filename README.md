@@ -5,12 +5,19 @@
 
 ## Web Client based on Angular 6+, Bootstrap 4 and [Nebular](https://github.com/akveo/nebular)
 
-+ clone code
-+ install node v8.0+(if without)
-+ npm install -g @angular/cli
-+ npm install
-+ npm dedupe (Optional)
-+ npm start
+### *Run Code By Following Steps*
+
+* clone code from github
+* install node v8.11.0+(if without)
+* **then run following steps by shell**
+
+~~~bash
+$npm install -g @angular/cli
+$npm install
+$npm dedupe (Optional)
+$npm start (or ng serve)
+
+~~~
 
 ### Three themes available
 
