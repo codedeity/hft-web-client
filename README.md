@@ -9,6 +9,8 @@
 + install node v8.0+(if without)
 + npm install -g @angular/cli
 + npm install
++ npm dedupe (Optional)
++ npm start
 
 ### Three themes available
 
