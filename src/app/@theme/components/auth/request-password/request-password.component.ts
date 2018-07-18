@@ -12,7 +12,7 @@ import { getDeepFromObject } from '@nebular/auth/helpers';
   selector: 'hft-request-password-page',
   styleUrls: ['./request-password.component.scss'],
   template: `
-    <nb-auth-block>
+    <hft-auth-block>
       <h2 class="title">Forgot Password</h2>
       <small class="form-text sub-title">Enter your email adress and we’ll send a link to reset your password</small>
       <form (ngSubmit)="requestPass()" #requestPassForm="ngForm">
@@ -58,7 +58,7 @@ import { getDeepFromObject } from '@nebular/auth/helpers';
           <a routerLink="../register"><strong>Sign Up</strong></a>
         </small>
       </div>
-    </nb-auth-block>
+    </hft-auth-block>
   `,
 })
 export class HftRequestPasswordComponent {
