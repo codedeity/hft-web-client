@@ -12,6 +12,16 @@ export const MENU_ITEMS: NbMenuItem[] = [
     group: true,
   },
   {
+    title: 'Stock-Trend',
+    icon: 'nb-tables',
+    children: [
+      {
+        title: 'Stock-Table',
+        link: '/pages/tables/stock-trend',
+      },
+    ],
+  },
+  {
     title: 'Auth',
     icon: 'nb-locked',
     children: [
