@@ -10,9 +10,9 @@ import { getDeepFromObject } from '@nebular/auth/helpers';
 
 
 @Component({
-  selector: 'hft-login',
+  selector: 'ngx-login',
   template: `
-    <hft-auth-block>
+    <ngx-auth-block>
       <h2 class="title">Sign In</h2>
       <small class="form-text sub-title">Hello! Sign in with your username or email</small>
 
@@ -102,10 +102,10 @@ import { getDeepFromObject } from '@nebular/auth/helpers';
           Don't have an account? <a routerLink="../register"><strong>Sign Up</strong></a>
         </small>
       </div>
-    </hft-auth-block>
+    </ngx-auth-block>
   `,
 })
-export class HftLoginComponent {
+export class NgxLoginComponent {
 
   redirectDelay: number = 0;
   showMessages: any = {};

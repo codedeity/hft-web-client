@@ -30,13 +30,13 @@ import {
   LayoutDirectionSwitcherComponent,
   ThemeSwitcherComponent,
   ThemeSwitcherListComponent,
-  HftAuthComponent,
-  HftAuthBlockComponent,
-  HftLoginComponent,
-  HftRegisterComponent,
-  HftRequestPasswordComponent,
-  HftResetPasswordComponent,
-  HftLogoutComponent,
+  NgxAuthComponent,
+  NgxAuthBlockComponent,
+  NgxLoginComponent,
+  NgxRegisterComponent,
+  NgxRequestPasswordComponent,
+  NgxResetPasswordComponent,
+  NgxLogoutComponent,
 } from './components';
 import { CapitalizePipe, PluralPipe, RoundPipe, TimingPipe } from './pipes';
 import {
@@ -82,13 +82,13 @@ const COMPONENTS = [
   SampleLayoutComponent,
   ThreeColumnsLayoutComponent,
   TwoColumnsLayoutComponent,
-  HftAuthComponent,
-  HftAuthBlockComponent,
-  HftLoginComponent,
-  HftRegisterComponent,
-  HftRequestPasswordComponent,
-  HftResetPasswordComponent,
-  HftLogoutComponent,
+  NgxAuthComponent,
+  NgxAuthBlockComponent,
+  NgxLoginComponent,
+  NgxRegisterComponent,
+  NgxRequestPasswordComponent,
+  NgxResetPasswordComponent,
+  NgxLogoutComponent,
 ];
 
 const ENTRY_COMPONENTS = [

@@ -9,10 +9,10 @@ import { NB_AUTH_OPTIONS,NbAuthService,NbAuthResult } from '@nebular/auth';
 import { getDeepFromObject } from '@nebular/auth/helpers';
 
 @Component({
-  selector: 'hft-reset-password-page',
+  selector: 'ngx-reset-password-page',
   styleUrls: ['./reset-password.component.scss'],
   template: `
-    <hft-auth-block>
+    <ngx-auth-block>
       <h2 class="title">Change password</h2>
       <small class="form-text sub-title">Please enter a new password</small>
       <form (ngSubmit)="resetPass()" #resetPassForm="ngForm">
@@ -80,10 +80,10 @@ import { getDeepFromObject } from '@nebular/auth/helpers';
           <a routerLink="../register"><strong>Sign Up</strong></a>
         </small>
       </div>
-    </hft-auth-block>
+    </ngx-auth-block>
   `,
 })
-export class HftResetPasswordComponent {
+export class NgxResetPasswordComponent {
 
   redirectDelay: number = 0;
   showMessages: any = {};

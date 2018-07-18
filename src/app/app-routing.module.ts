@@ -1,43 +1,43 @@
 import { ExtraOptions, RouterModule, Routes } from '@angular/router';
 import { NgModule } from '@angular/core';
 import {
-  HftAuthComponent,
-  HftLoginComponent,
-  HftLogoutComponent,
-  HftRegisterComponent,
-  HftRequestPasswordComponent,
-  HftResetPasswordComponent,
+  NgxAuthComponent,
+  NgxLoginComponent,
+  NgxLogoutComponent,
+  NgxRegisterComponent,
+  NgxRequestPasswordComponent,
+  NgxResetPasswordComponent,
 } from './@theme/components';
 
 const routes: Routes = [
   { path: 'pages', loadChildren: 'app/pages/pages.module#PagesModule' },
   {
     path: 'auth',
-    component: HftAuthComponent,
+    component: NgxAuthComponent,
     children: [
       {
         path: '',
-        component: HftLoginComponent,
+        component: NgxLoginComponent,
       },
       {
         path: 'login',
-        component: HftLoginComponent,
+        component: NgxLoginComponent,
       },
       {
         path: 'register',
-        component: HftRegisterComponent,
+        component: NgxRegisterComponent,
       },
       {
         path: 'logout',
-        component: HftLogoutComponent,
+        component: NgxLogoutComponent,
       },
       {
         path: 'request-password',
-        component: HftRequestPasswordComponent,
+        component: NgxRequestPasswordComponent,
       },
       {
         path: 'reset-password',
-        component: HftResetPasswordComponent,
+        component: NgxResetPasswordComponent,
       },
     ],
   },

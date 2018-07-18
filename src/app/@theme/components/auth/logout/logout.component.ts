@@ -11,12 +11,12 @@ import { getDeepFromObject } from '@nebular/auth/helpers';
 
 
 @Component({
-  selector: 'hft-logout',
+  selector: 'ngx-logout',
   template: `
     <div>Logging out, please wait...</div>
   `,
 })
-export class HftLogoutComponent implements OnInit {
+export class NgxLogoutComponent implements OnInit {
 
   redirectDelay: number = 0;
   strategy: string = '';
