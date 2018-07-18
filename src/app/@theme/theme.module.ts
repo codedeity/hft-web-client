@@ -50,7 +50,7 @@ import { COSMIC_THEME } from './styles/theme.cosmic';
 import { CORPORATE_THEME } from './styles/theme.corporate';
 import { RouterModule } from '@angular/router';
 
-const BASE_MODULES = [CommonModule, FormsModule ,RouterModule,ReactiveFormsModule];
+const BASE_MODULES = [CommonModule, FormsModule , RouterModule, ReactiveFormsModule];
 
 const NB_MODULES = [
   NbCardModule,

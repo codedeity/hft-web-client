@@ -6,7 +6,7 @@
 import { Component, Inject, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
-import { NB_AUTH_OPTIONS,NbAuthService,NbAuthResult } from '@nebular/auth';
+import { NB_AUTH_OPTIONS, NbAuthService, NbAuthResult } from '@nebular/auth';
 import { getDeepFromObject } from '@nebular/auth/helpers';
 
 
