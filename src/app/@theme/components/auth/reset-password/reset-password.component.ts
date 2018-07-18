@@ -12,7 +12,7 @@ import { getDeepFromObject } from '@nebular/auth/helpers';
   selector: 'ngx-reset-password-page',
   styleUrls: ['./reset-password.component.scss'],
   template: `
-    <ngx-auth-block>
+    <nb-auth-block>
       <h2 class="title">Change password</h2>
       <small class="form-text sub-title">Please enter a new password</small>
       <form (ngSubmit)="resetPass()" #resetPassForm="ngForm">
@@ -80,7 +80,7 @@ import { getDeepFromObject } from '@nebular/auth/helpers';
           <a routerLink="../register"><strong>Sign Up</strong></a>
         </small>
       </div>
-    </ngx-auth-block>
+    </nb-auth-block>
   `,
 })
 export class NgxResetPasswordComponent {

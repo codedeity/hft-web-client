@@ -20,7 +20,7 @@ import {
 } from '@nebular/theme';
 
 import { NbSecurityModule } from '@nebular/security';
-
+import { NbAuthModule } from '@nebular/auth';
 import {
   FooterComponent,
   HeaderComponent,
@@ -30,8 +30,6 @@ import {
   LayoutDirectionSwitcherComponent,
   ThemeSwitcherComponent,
   ThemeSwitcherListComponent,
-  NgxAuthComponent,
-  NgxAuthBlockComponent,
   NgxLoginComponent,
   NgxRegisterComponent,
   NgxRequestPasswordComponent,
@@ -50,7 +48,7 @@ import { COSMIC_THEME } from './styles/theme.cosmic';
 import { CORPORATE_THEME } from './styles/theme.corporate';
 import { RouterModule } from '@angular/router';
 
-const BASE_MODULES = [CommonModule, FormsModule , RouterModule, ReactiveFormsModule];
+const BASE_MODULES = [CommonModule, RouterModule,FormsModule, ReactiveFormsModule];
 
 const NB_MODULES = [
   NbCardModule,
@@ -67,6 +65,7 @@ const NB_MODULES = [
   NbContextMenuModule,
   NgbModule,
   NbSecurityModule, // *nbIsGranted directive
+  NbAuthModule
 ];
 
 const COMPONENTS = [
@@ -82,8 +81,6 @@ const COMPONENTS = [
   SampleLayoutComponent,
   ThreeColumnsLayoutComponent,
   TwoColumnsLayoutComponent,
-  NgxAuthComponent,
-  NgxAuthBlockComponent,
   NgxLoginComponent,
   NgxRegisterComponent,
   NgxRequestPasswordComponent,
@@ -105,7 +102,7 @@ const PIPES = [
 const NB_THEME_PROVIDERS = [
   ...NbThemeModule.forRoot(
     {
-      name: 'cosmic',
+      name: 'corporate',
     },
     [ DEFAULT_THEME, COSMIC_THEME, CORPORATE_THEME ],
   ).providers,

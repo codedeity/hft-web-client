@@ -12,7 +12,7 @@ import { getDeepFromObject } from '@nebular/auth/helpers';
 @Component({
   selector: 'ngx-login',
   template: `
-    <ngx-auth-block>
+    <nb-auth-block>
       <h2 class="title">Sign In</h2>
       <small class="form-text sub-title">Hello! Sign in with your username or email</small>
 
@@ -102,7 +102,7 @@ import { getDeepFromObject } from '@nebular/auth/helpers';
           Don't have an account? <a routerLink="../register"><strong>Sign Up</strong></a>
         </small>
       </div>
-    </ngx-auth-block>
+    </nb-auth-block>
   `,
 })
 export class NgxLoginComponent {

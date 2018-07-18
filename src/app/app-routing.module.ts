@@ -1,7 +1,6 @@
 import { ExtraOptions, RouterModule, Routes } from '@angular/router';
 import { NgModule } from '@angular/core';
 import {
-  NgxAuthComponent,
   NgxLoginComponent,
   NgxLogoutComponent,
   NgxRegisterComponent,
@@ -9,11 +8,13 @@ import {
   NgxResetPasswordComponent,
 } from './@theme/components';
 
+import{ NbAuthComponent } from '@nebular/auth';
+
 const routes: Routes = [
   { path: 'pages', loadChildren: 'app/pages/pages.module#PagesModule' },
   {
     path: 'auth',
-    component: NgxAuthComponent,
+    component: NbAuthComponent,
     children: [
       {
         path: '',

@@ -13,7 +13,7 @@ import { getDeepFromObject } from '@nebular/auth/helpers';
   selector: 'ngx-register',
   styleUrls: ['./register.component.scss'],
   template: `
-    <ngx-auth-block>
+    <nb-auth-block>
       <h2 class="title">Sign Up</h2>
       <form (ngSubmit)="register()" #form="ngForm">
 
@@ -141,7 +141,7 @@ import { getDeepFromObject } from '@nebular/auth/helpers';
           Already have an account? <a routerLink="../login"><strong>Sign in</strong></a>
         </small>
       </div>
-    </ngx-auth-block>
+    </nb-auth-block>
   `,
 })
 export class NgxRegisterComponent {
