@@ -48,7 +48,7 @@ import { COSMIC_THEME } from './styles/theme.cosmic';
 import { CORPORATE_THEME } from './styles/theme.corporate';
 import { RouterModule } from '@angular/router';
 
-const BASE_MODULES = [CommonModule, RouterModule,FormsModule, ReactiveFormsModule];
+const BASE_MODULES = [CommonModule, RouterModule, FormsModule, ReactiveFormsModule];
 
 const NB_MODULES = [
   NbCardModule,
@@ -65,7 +65,7 @@ const NB_MODULES = [
   NbContextMenuModule,
   NgbModule,
   NbSecurityModule, // *nbIsGranted directive
-  NbAuthModule
+  NbAuthModule,
 ];
 
 const COMPONENTS = [
