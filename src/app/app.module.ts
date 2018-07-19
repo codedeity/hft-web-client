@@ -14,7 +14,7 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { ThemeModule } from './@theme/theme.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-
+import { SharedMaterialModule } from './@shared/material';
 @NgModule({
   declarations: [AppComponent],
   imports: [
@@ -22,7 +22,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     BrowserAnimationsModule,
     HttpClientModule,
     AppRoutingModule,
-
+    SharedMaterialModule,
     NgbModule.forRoot(),
     ThemeModule.forRoot(),
     CoreModule.forRoot(),
